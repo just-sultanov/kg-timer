@@ -2,4 +2,4 @@
  :tasks
  {serve {:doc "Serve static assets"
          :requires ([babashka.http-server :as server])
-         :task (server/exec {:port 3000 :dir "./public"})}}}
+         :task (server/exec {:port 3000 :dir "."})}}}
