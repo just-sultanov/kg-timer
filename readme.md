@@ -1,1 +1,1 @@
-# Kingdom Guard Event Timer
+# Kingdom Guard - Event Timer

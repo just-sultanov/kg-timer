@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kingdom Guard Event Timer</title>
+    <title>Kingdom Guard - Event Timer</title>
+    <link rel="icon" href="public/favicon.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/isSameOrAfter.js"></script>
@@ -16,73 +17,10 @@
     <script crossorigin src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/scittle@0.7.30/dist/scittle.reagent.js" type="application/javascript"></script>
-    <script src="./datetime.cljs" type="application/x-scittle"></script>
-    <script src="./app.cljs" type="application/x-scittle"></script>
+    <script src="public/datetime.cljs" type="application/x-scittle"></script>
+    <script src="public/app.cljs" type="application/x-scittle"></script>
   </head>
 
-  <body class="h-full">
-    <main class="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
-      <div id="app" class="text-center"></div>
-    </main>
-
-    <footer class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg">
-      <div class="container mx-auto px-4 py-3">
-        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-          <!-- Hotkeys -->
-          <div class="flex items-center gap-6">
-            <!-- Space -->
-            <div class="flex items-center gap-2">
-              <div class="relative group">
-                <kbd
-                  class="inline-flex items-center justify-center w-24 px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg text-sm font-mono font-medium text-gray-800 shadow-sm hover:bg-gray-200 transition-colors"
-                >
-                  <span>Space</span>
-                </kbd>
-                <div
-                  class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap"
-                >
-                  Start timer (1m 58sec)
-                  <div
-                    class="absolute top-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-t-gray-800"
-                  ></div>
-                </div>
-              </div>
-              <span class="text-sm text-gray-600 hidden md:inline">Start timer</span>
-            </div>
-
-            <!-- Separator -->
-            <div class="text-gray-400 hidden md:block">|</div>
-
-            <!-- Esc -->
-            <div class="flex items-center gap-2">
-              <div class="relative group">
-                <kbd
-                  class="inline-flex items-center justify-center w-16 px-4 py-2 bg-red-50 border border-red-200 rounded-lg text-sm font-mono font-medium text-red-700 shadow-sm hover:bg-red-100 transition-colors"
-                >
-                  <span>Esc</span>
-                </kbd>
-                <div
-                  class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-red-600 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap"
-                >
-                  Stop timer
-                  <div
-                    class="absolute top-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-t-red-600"
-                  ></div>
-                </div>
-              </div>
-              <span class="text-sm text-gray-600 hidden md:inline">Stop timer</span>
-            </div>
-          </div>
-
-          <!-- Copyright -->
-          <div class="text-center md:text-left">
-            <h3 class="text-sm text-semibold text-gray-700">
-              Made with <bold class="text-red-700">♥</bold> by <a href="https://github.com/just-sultanov" target="_blank" class="text-indigo-600">Ilshat Sultanov</a>
-            </h3>
-            <p class="text-xs text-gray-500"></p>
-          </div>
-        </div>
-      </div>
-    </footer>
+  <body id="app" class="h-full">
   </body>
 </html>
